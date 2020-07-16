@@ -11,6 +11,11 @@ body {
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 /* header/bio styles */
 .bio {
   height: 60em;
@@ -68,11 +73,6 @@ body {
 
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
 .spotify {
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 60%, #5ABAF2 40%);
   transition: 0.2s;
@@ -125,6 +125,8 @@ a {
   grid-template-rows: 22em 22em;
   grid-gap: 4em 4em;
   margin-bottom: 14em;
+  z-index: 2;
+  position: relative;
 }
 
 
@@ -188,6 +190,83 @@ a {
   margin: -3em -1em 0 0;
   box-shadow: 0.4em 0.4em 0.6em 0.4em rgba(37, 37, 38, 0.12);
   transition: 0.4s
+}
+.cs-container1 {
+  position: relative;
+}
+.cs-container2 {
+  position: relative;
+}
+.cs-container3 {
+  position: relative;
+}
+.cs-container4 {
+  position: relative;
+}
+.name1 {
+position: absolute;
+padding: 0.2em 0.5em;
+top: 16em;
+left: -6em;
+border-radius: 0.2em;
+transition: 0.4s;
+opacity: 0;
+}
+.cs-container1:hover > .name1 {
+  opacity: 1;
+  left: -2em;
+  transition: 0.4s;
+}
+.name2 {
+  position: absolute;
+  padding: 0.2em 0.5em;
+  top: 16em;
+  left: -6em;
+  border-radius: 0.2em;
+  transition: 0.4s;
+  opacity: 0;
+}
+.cs-container2:hover > .name2 {
+  opacity: 1;
+  left: -2em;
+  transition: 0.4s;
+}
+.name3 {
+  position: absolute;
+  padding: 0.2em 0.5em;
+  top: 16em;
+  left: -6em;
+  border-radius: 0.2em;
+  transition: 0.4s;
+  opacity: 0;
+
+}
+.cs-container3:hover > .name3 {
+  opacity: 1;
+  left: -2em;
+  transition: 0.4s;
+}
+.name4 {
+  position: absolute;
+  padding: 0.2em 0.5em;
+  top: 16em;
+  left: -6em;
+  border-radius: 0.2em;
+  transition: 0.4s;
+  opacity: 0;
+}
+.cs-container4:hover > .name4 {
+  opacity: 1;
+  left: -2em;
+  transition: 0.4s;
+}
+
+.name {
+  z-index: 10;
+  background: #252526;
+  color: #E0DFD7;
+  display: inline-block;
+  position: absolute;
 }
 
 .cs-container1 {
